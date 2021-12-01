@@ -23,7 +23,7 @@ function Body()
                 meowed
               </div>
             </div>
-
+ 
             <div class="story">
               <div class="imagem">
                 <img src="assets/img/barked.svg" />
@@ -35,7 +35,7 @@ function Body()
 
             <div class="story">
               <div class="imagem">
-                <img src="assets/img/nathanwpylestrangeplanet.svg" />
+                <img alt="" src="assets/img/nathanwpylestrangeplanet.svg" />
               </div>
               <div class="usuario">
                 nathanwpylestrangeplanet
