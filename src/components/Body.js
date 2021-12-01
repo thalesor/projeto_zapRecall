@@ -2,6 +2,7 @@ import React from 'react';
 import Stories from './Stories';
 import Posts from './Posts';
 import Sidebar from './Sidebar';
+import user from './database/userdata';
 
 function Body()
 {
@@ -11,7 +12,7 @@ function Body()
           <Stories />
           <Posts />
         </div>
-        <Sidebar />
+        <Sidebar name={user[0].name} alias={user[0].alias} image={user[0].image}/>
       </div>
     );
 }

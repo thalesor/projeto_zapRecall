@@ -1,14 +1,15 @@
 import React from 'react';
 import Suggestions from './Suggestions';
 
-function Sidebar() {
+function Sidebar(props) {
+    const{name, alias, image} = props;
 return (
     <div class="sidebar">
         <div class="usuario">
-        <img src="assets/img/catanacomics.svg" />
+        <img src={image} />
         <div class="texto">
-            <strong>catanacomics</strong>
-            Catana
+            <strong>{name}</strong>
+            {alias}
         </div>
         </div>
         <Suggestions />

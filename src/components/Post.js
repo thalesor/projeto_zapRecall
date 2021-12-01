@@ -1,4 +1,5 @@
 import React from 'react';
+import Icon from './Icon';
 import parse from 'html-react-parser';
 
 const Post = ({ user, text }) => {
@@ -10,7 +11,7 @@ const Post = ({ user, text }) => {
             {user.name}
         </div>
         <div class="acoes">
-            <ion-icon name="ellipsis-horizontal"></ion-icon>
+            <Icon name="ellipsis-horizontal" />
         </div>
         </div>
 
@@ -21,12 +22,12 @@ const Post = ({ user, text }) => {
         <div class="fundo">
         <div class="acoes">
             <div>
-            <ion-icon name="heart-outline"></ion-icon>
-            <ion-icon name="chatbubble-outline"></ion-icon>
-            <ion-icon name="paper-plane-outline"></ion-icon>
+            <Icon name="heart-outline" />
+            <Icon name="chatbubble-outline" />
+            <Icon name="paper-plane-outline" />
             </div>
             <div>
-            <ion-icon name="bookmark-outline"></ion-icon>
+            <Icon name="bookmark-outline" />
             </div>
         </div>
 
