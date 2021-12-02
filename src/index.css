@@ -103,6 +103,18 @@
     overflow: hidden;
     position: relative;
   }
+
+  .stories-empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 118px;
+    border-radius: 3px;
+    border: 1px solid #DBDBDB;
+    font-size: 20px;
+    color: #8E8E8E;
+    padding: 0 18px;
+  }
   
   .story {
     display: flex;
@@ -115,6 +127,7 @@
     cursor: pointer;
     margin-right: 10px;
   }
+  
   
   .story .imagem {
     display: flex;

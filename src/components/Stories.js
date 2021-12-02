@@ -1,9 +1,8 @@
 import React from 'react';
 import Story from './Story';
-import stories from './database/stories';
 
-const Stories = () => {
-    return (
+const Stories = ( {stories} ) => {
+    return stories.length ?(
       <div class="stories">
         {
           stories.map((story, i) => {
@@ -19,6 +18,11 @@ const Stories = () => {
         <div class="setinha">
               <ion-icon name="chevron-forward-circle"></ion-icon>
         </div>
+      </div>
+    ):
+    (
+      <div class="stories-empty">
+        <p>Não foram encontrados Stories!</p>
       </div>
     );
   }

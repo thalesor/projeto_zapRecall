@@ -1,6 +1,7 @@
 import React from 'react';
+import SearchBox from './SearchBox';
 
-function Navbar()
+function Navbar({searchChange})
 {
     return(
       <div class="navbar">
@@ -19,9 +20,7 @@ function Navbar()
             <img src="assets/img/logo.png" />
           </div>
   
-          <div class="pesquisa">
-            <input type="text" placeholder="Pesquisar" />
-          </div>
+          <SearchBox searchChange={searchChange}/>
   
           <div class="icones">
             <ion-icon name="paper-plane-outline"></ion-icon>
