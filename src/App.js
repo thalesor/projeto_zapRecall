@@ -13,8 +13,6 @@ function App()
     setStories(stories_data);
   },[stories])
 
-
-
   const onSearchChange = (event) => {
     setSearchfield(event.target.value)
   }
@@ -22,7 +20,6 @@ function App()
   const filteredStories = stories.filter(story =>{
     return story.user.toLowerCase().includes(searchfield.toLowerCase());
   })
-
 
     return(
         <div class="root">

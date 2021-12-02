@@ -1,7 +1,9 @@
 import React from 'react';
 import Story from './Story';
+import Icon from './Icon';
 
 const Stories = ( {stories} ) => {
+
     return stories.length ?(
       <div class="stories">
         {
@@ -13,10 +15,9 @@ const Stories = ( {stories} ) => {
                 />
             );
           })
-          
         }
         <div class="setinha">
-              <ion-icon name="chevron-forward-circle"></ion-icon>
+              <Icon name="chevron-forward-circle" />
         </div>
       </div>
     ):
