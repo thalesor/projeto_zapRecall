@@ -5,24 +5,23 @@ import Icon from './Icon';
 const Stories = ( {stories} ) => {
 
     return stories.length ?(
-      <div class="stories">
+      <div className="stories">
         {
-          stories.map((story, i) => {
-            return (
-              <Story
-                user={story.user}
-                image={story.image}
-                />
-            );
-          })
+          stories.map((story, i) => 
+            <Story
+              key={i}
+              user={story.user}
+              image={story.image}
+              />
+          )
         }
-        <div class="setinha">
+        <div className="setinha">
               <Icon name="chevron-forward-circle" />
         </div>
       </div>
     ):
     (
-      <div class="stories-empty">
+      <div className="stories-empty">
         <p>Não foram encontrados Stories!</p>
       </div>
     );

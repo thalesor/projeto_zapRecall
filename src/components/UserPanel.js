@@ -2,15 +2,15 @@ import React from 'react';
 
 function UserPanel(props) {
     const{name, alias, image} = props;
-return (
-        <div class="usuario">
+    return (
+        <div className="usuario">
             <img src={image} />
-            <div class="texto">
+            <div className="texto">
                 <strong>{name}</strong>
                 {alias}
             </div>
         </div>
-        
-);
-}
+
+    );
+    }
 export default UserPanel;

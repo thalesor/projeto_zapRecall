@@ -2,16 +2,16 @@ import React from 'react';
 
 const Suggestion = ({ user, razao }) => {
   return (
-    <div class="sugestao">
-        <div class="usuario">
+    <div className="sugestao">
+        <div className="usuario">
         <img src={user.image} />
-        <div class="texto">
-            <div class="nome">{user.name}</div>
-            <div class="razao">{razao}</div>
+        <div className="texto">
+            <div className="nome">{user.name}</div>
+            <div className="razao">{razao}</div>
         </div>
         </div>
 
-        <div class="seguir">Seguir</div>
+        <div className="seguir">Seguir</div>
     </div>
   );
 }

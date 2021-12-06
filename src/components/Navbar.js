@@ -8,32 +8,32 @@ function Navbar({searchChange})
   const plane = <Icon name="paper-plane-outline" />
 
     return(
-      <div class="navbar">
-        <div class="container">
-          <div class="logo">
+      <div className="navbar">
+        <div className="container">
+          <div className="logo">
             {logo}
-            <div class="separador"></div>
+            <div className="separador"></div>
             <img src="assets/img/logo.png" />
           </div>
 
-          <div class="logo-mobile">
+          <div className="logo-mobile">
             {logo}
           </div>
 
-          <div class="instagram-mobile">
+          <div className="instagram-mobile">
             <img src="assets/img/logo.png" />
           </div>
   
           <SearchBox searchChange={searchChange}/>
   
-          <div class="icones">
+          <div className="icones">
             {plane}
             <Icon name="compass-outline" />
             <Icon name="heart-outline" />
             <Icon name="person-outline" />
           </div>
 
-          <div class="icones-mobile">
+          <div className="icones-mobile">
             {plane}
           </div>
         </div>

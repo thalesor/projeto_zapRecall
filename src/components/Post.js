@@ -4,23 +4,23 @@ import parse from 'html-react-parser';
 
 const Post = ({ user, text }) => {
   return (
-    <div class="post">
-        <div class="topo">
-        <div class="usuario">
+    <div className="post">
+        <div className="topo">
+        <div className="usuario">
             <img src={user.image} />
             {user.name}
         </div>
-        <div class="acoes">
+        <div className="acoes">
             <Icon name="ellipsis-horizontal" />
         </div>
         </div>
 
-        <div class="conteudo">
+        <div className="conteudo">
         <img src="assets/img/gato-telefone.svg" />
         </div>
 
-        <div class="fundo">
-        <div class="acoes">
+        <div className="fundo">
+        <div className="acoes">
             <div>
             <Icon name="heart-outline" />
             <Icon name="chatbubble-outline" />
@@ -31,9 +31,9 @@ const Post = ({ user, text }) => {
             </div>
         </div>
 
-        <div class="curtidas">
+        <div className="curtidas">
             <img src="assets/img/respondeai.svg" />
-            <div class="texto">
+            <div className="texto">
             {parse(text)}
             </div>
         </div>

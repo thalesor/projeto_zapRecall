@@ -4,7 +4,7 @@ import Icon from './Icon';
 function Footer()
 {
     return(
-        <div class="fundo-mobile">
+        <div className="fundo-mobile">
         <Icon name="home"/>
         <Icon name="search-outline"/>
         <Icon name="add-circle-outline"/>

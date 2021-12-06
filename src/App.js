@@ -22,7 +22,7 @@ function App()
   })
 
     return(
-        <div class="root">
+        <div className="root">
           <Navbar searchChange={onSearchChange}/>
           <Body stories={filteredStories}/>
           <Footer />

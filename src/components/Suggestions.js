@@ -4,21 +4,19 @@ import suggestions_data from './database/suggestions';
 
 const Suggestions = () => {
     return (
-        <div class="sugestoes">
-        <div class="titulo">
+        <div className="sugestoes">
+        <div className="titulo">
             Sugestões para você
             <div>Ver tudo</div>
         </div>
         {
-          suggestions_data.map((suggestion, i) => {
-            return (
-              <Suggestion
-                user={suggestion.user}
-                razao={suggestion.razao}
-                />
-            );
-          })
-          
+          suggestions_data.map((suggestion, i) => 
+            <Suggestion
+              key={i}
+              user={suggestion.user}
+              razao={suggestion.razao}
+              />
+            )
         }
       </div>
     );

@@ -4,17 +4,15 @@ import posts from './database/posts';
 
 const Posts = () => {
     return (
-      <div class="posts">
+      <div className="posts">
         {
-          posts.map((post, i) => {
-            return (
-              <Post
-                user={post.user}
-                text={post.text}
-                />
-            );
-          })
-          
+          posts.map((post, i) =>
+            <Post
+              key={i}
+              user={post.user}
+              text={post.text}
+              />
+          )
         }
       </div>
     );

@@ -6,8 +6,8 @@ import Sidebar from './Sidebar';
 function Body( {stories} )
 {
     return(
-        <div class="corpo">
-        <div class="esquerda">
+        <div className="corpo">
+        <div className="esquerda">
           <Stories stories={stories}/>
           <Posts />
         </div>

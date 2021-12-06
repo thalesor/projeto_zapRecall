@@ -2,11 +2,11 @@ import React from 'react';
 
 const Story = ({ user, image }) => {
   return (
-    <div class="story">
-        <div class="imagem">
+    <div className="story">
+        <div className="imagem">
             <img src={image} />
         </div>
-        <div class="usuario">
+        <div className="usuario">
              {user}
         </div>
     </div>
