@@ -1,31 +1,36 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
-import Body from './components/Body';
-import Footer from './components/Footer';
-import stories_data from './components/database/stories';
+import Deck from './components/Deck';
+import Message from './components/Message';
+import Home from './components/Home';
 
 function App()
 {
-  const [stories, setStories] = useState([])
-  const [searchfield, setSearchfield] = useState('')
+  const [route, setRoute] = useState('')
+  const [messageStatus, setMessageStatus] = useState('');
+  const [idDeck, setIdDeck] = useState(null);
+  const [nameDeck, setNameDeck] = useState('');
+  const [metasZap, setMetasZap] = useState(null);
 
   useEffect(()=> {
-    setStories(stories_data);
-  },[stories])
-
-  const onSearchChange = (event) => {
-    setSearchfield(event.target.value)
-  }
-
-  const filteredStories = stories.filter(story =>{
-    return story.user.toLowerCase().includes(searchfield.toLowerCase());
-  })
-
+    setRoute('home');
+  },[]) 
+  
     return(
         <div className="root">
-          <Navbar searchChange={onSearchChange}/>
-          <Body stories={filteredStories}/>
-          <Footer />
+          <Navbar/>
+          <main>
+          { route === 'deck' 
+            ?
+             <Deck setRoute={setRoute} metasZap={metasZap} idDeck={idDeck} nameDeck={nameDeck} setMessageStatus={setMessageStatus}/>
+             : (
+              (route === 'message') 
+              ? <Message setRoute={setRoute} setMetasZap={setMetasZap} messageStatus={messageStatus}/>
+              : 
+              <Home setRoute={setRoute} metasZap={metasZap} setMetasZap={setMetasZap} setIdDeck={setIdDeck} setNameDeck={setNameDeck}/>
+            )
+          }
+          </main>
       </div>
     );
 }
