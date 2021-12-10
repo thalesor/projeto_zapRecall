@@ -58,7 +58,7 @@ const Home = ({setRoute, setIdDeck, setNameDeck, setMetasZap}) =>
                 recalls.map((deck, i) => 
                 {
                     return (
-                    <li className='animate__animated animate__slideInUp'><a onClick={()=>chooseDeck(deck.id, deck.name)} className='btn'>Praticar {deck.name}<img src="assets/next.png"/></a></li>
+                    <li key={i} className='animate__animated animate__slideInUp'><a onClick={()=>chooseDeck(deck.id, deck.name)} className='btn'>Praticar {deck.name}<img src="assets/next.png"/></a></li>
                 );
                 })
             }
