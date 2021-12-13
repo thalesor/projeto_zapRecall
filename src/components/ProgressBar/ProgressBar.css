@@ -1,6 +1,6 @@
 
 .progress-div {
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(196, 196, 196);
     border-radius: .5rem;
 }
 
@@ -14,19 +14,42 @@
   .progress.red
   {
       background-color: #F74848;
+      -webkit-box-shadow: 5px 11px 19px -1px #F74848; 
+box-shadow: 5px 11px 19px -1px #F74848;
   }
 
   .progress.yellow
   {
       background-color: #FFEF61;
+      -webkit-box-shadow: 5px 11px 19px -1px #FFEF61; 
+box-shadow: 5px 11px 19px -1px #FFEF61;
   }
 
   .progress.green
   {
       background-color: #62DB38;
+      -webkit-box-shadow: 5px 11px 19px -1px #62DB38; 
+box-shadow: 5px 11px 19px -1px #62DB38;
   }
 
   .progress.blue
   {
     background-color: rgb(62, 122, 235);
+    -webkit-box-shadow: 5px 11px 19px -1px rgb(62, 122, 235); 
+box-shadow: 5px 11px 19px -1px rgb(62, 122, 235);
   }
+
+  
+@media (max-width: 614px) {
+
+  .progress-div
+  {
+      max-width: 90% !important;
+      margin-left: 4%;
+  }
+
+  .progress
+  {
+      max-width: 100% !important;
+  }
+}

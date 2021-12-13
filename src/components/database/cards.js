@@ -46,19 +46,44 @@
       question: 'Usamos estado (state) para __',
       answer: `dizer para o React quais informações quando atualizadas devem renderizar a tela novamente`,
       status: null
-      },
-    {
-      idDeck: 1,
-      question: 'Lavar a cabeleira com __',
-      answer: `O Johnson's Baby shampoo waaaaaaaaaaaaaaaaaaaaaaaaaaaaaa`,
-      status: null
-      },
+    },
     {
       idDeck: 2,
       question: 'O que significa DOM?',
       answer: `Document Object Model`,
       status: null
-      }
+    },
+    {
+      idDeck: 2,
+      question: 'Como se declara um objeto em javascript?',
+      answer: `object: {
+        propriedade1,
+        propriedade2,
+        ...
+      }`,
+      status: null
+    },
+    {
+      idDeck: 2,
+      question: 'Como se declara uma arrow function?',
+      answer: `const funcao = (parâmetros) =>
+      {
+
+      }`,
+      status: null
+    },
+    {
+      idDeck: 2,
+      question: 'Qual a propriedade que fornece o número de itens de um array?',
+      answer: `length`,
+      status: null
+    },
+    {
+      idDeck: 2,
+      question: 'Qual propriedade modifica ou retorna o texto que o usuário enxerga dentro de uma div?',
+      answer: `innerText`,
+      status: null
+    },
     
   ];
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import Snackbar from "./Snackbar/Snackbar";
 import recalls from './database/recalls.js';
 import cards from './database/cards.js';
@@ -58,7 +58,7 @@ const Home = ({setRoute, setIdDeck, setNameDeck, setMetasZap}) =>
                 recalls.map((deck, i) => 
                 {
                     return (
-                    <li key={i} className='animate__animated animate__slideInUp'><a onClick={()=>chooseDeck(deck.id, deck.name)} className='btn'>Praticar {deck.name}<img src="assets/next.png"/></a></li>
+                    <li key={i} className='animate__animated animate__slideInUp'><a onClick={()=>chooseDeck(deck.id, deck.name)} data-identifier="start-zap-recall" className='btn'>Praticar {deck.name}<img src="assets/next.png"/></a></li>
                 );
                 })
             }
